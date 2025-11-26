@@ -1,6 +1,6 @@
 # GeoCoBox: Box-supervised 3D Tumor Segmentation via Geometric Co-embedding
 
-This paper has been accepted for presentation at AAAI 2026 as an Oral Presentation. The preprint can be found at:[AAAI_4465_GeoCoBox.pdf](https://github.com/user-attachments/files/23772848/AAAI_4465_GeoCoBox.pdf)
+This paper has been accepted for presentation at AAAI 2026 as an Oral Presentation. The preprint can be found at: [AAAI_4465_GeoCoBox.pdf](https://github.com/user-attachments/files/23772848/AAAI_4465_GeoCoBox.pdf)
 . And our code is based on [DRMNet](https://github.com/TzhongBoyyy97/DRMNet).
 
 This code is licensed for non-commercial research purposes only.
