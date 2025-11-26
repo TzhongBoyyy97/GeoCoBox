@@ -15,14 +15,12 @@ We propose a Geometric Pixel Co-embedding Learner for refining the tumor boundar
 ## Motivation
 
 The current box-supervised segmentation pipelines. The comparison between (a) pseudo-label generation models, (b) loss-based models, (c) organ template learning models, and (d) our approach.
-
-[fig1-relawork.pdf](https://github.com/user-attachments/files/23772709/fig1-relawork.pdf)
+<img width="1889" height="1453" alt="fig1-relawork" src="https://github.com/user-attachments/assets/71ade667-4cc8-4801-83af-5f080c405c3b" />
 
 
 ## Method
 The GeoCoBox framework uses 3D-UNet as the backbone. It includes two branches: AD-CAM and GCL. The AD-CAM branch generates coarse masks and provides edge positions. The GCL branch is employed to compute the similarity between the center embedding and the edge embeddings provided by the pre-trained contrastive head. The red line indicates that GCL explicitly integrates the positional information provided by AD-CAM and the embedding information from the contrastive head. 
-
-[fig2-newmethod.pdf](https://github.com/user-attachments/files/23772669/fig2-newmethod.pdf)
+<img width="2236" height="1262" alt="fig2-newmethod" src="https://github.com/user-attachments/assets/748747d0-7c60-4db5-b822-6d28ef26b421" />
 
 
 ## Citations
