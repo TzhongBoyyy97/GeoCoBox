@@ -27,6 +27,16 @@ The GeoCoBox framework uses 3D-UNet as the backbone. It includes two branches: A
 ## Citations
 If you are using the code/model/data provided here in a publication, please consider citing:
 ```bibtex
+@inproceedings{lan2026geocobox,
+  title={GeoCoBox: Box-supervised 3D Tumor Segmentation via Geometric Co-embedding},
+  author={Lan, Tianzhong and Yi, Zhang and Xu, Xiuyuan and Zhu, Min},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={40},
+  number={7},
+  pages={5818--5826},
+  year={2026}
+}
+
 @inproceedings{lan2025loobox,
   title={LooBox: Loose-box-supervised 3D Tumor Segmentation with Self-correcting Bidirectional Learning},
   author={Lan, Tianzhong and Yi, Zhang and Xu, Xiuyuan and Zhu, Min},
