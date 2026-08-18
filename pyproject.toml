@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "geocobox-reproduction"
+version = "0.1.0"
+description = "Reproduction of GeoCoBox (AAAI 2026)"
+requires-python = ">=3.9"
+dependencies = [
+  "numpy>=1.24",
+  "PyYAML>=6.0",
+  "torch>=2.1",
+  "tqdm>=4.66",
+]
+
+[project.optional-dependencies]
+medical = ["nibabel>=5.1", "scipy>=1.10"]
+test = ["pytest>=7.4"]
+
+[tool.setuptools.packages.find]
+include = ["geocobox*", "tools*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

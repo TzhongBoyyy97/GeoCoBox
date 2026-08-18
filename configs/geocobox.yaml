@@ -1,0 +1,44 @@
+seed: 2026
+device: auto
+output_dir: outputs/geocobox
+
+data:
+  train_manifest: data/train.json
+  val_manifest: data/val.json
+  patch_size: [96, 96, 96]
+  # Windowing only affects the network input. GCL sampling always uses raw HU.
+  ct_window: [-1000.0, 1000.0]
+  zscore: false
+  num_workers: 4
+
+model:
+  in_channels: 1
+  base_channels: 16
+  embedding_dim: 32
+  dropout: 0.0
+
+contrastive:
+  epochs: 50
+  batch_size: 2
+  learning_rate: 0.01
+  temperature: 0.1
+  # Paper ablation optimum on LIDC-IDRI: tau=8, delta=20 HU.
+  radius_tau: 8
+  intensity_delta_hu: 20.0
+  max_positive: 128
+  max_negative: 512
+  denominator: negatives
+
+training:
+  epochs: 80
+  adcam_only_epochs: 40
+  batch_size: 32
+  learning_rate: 0.01
+  momentum: 0.9
+  weight_decay: 0.0001
+  gcl_weight: 1.0
+  max_edge_points: 4096
+  amp: true
+  validate_every: 1
+  threshold: 0.5
+
